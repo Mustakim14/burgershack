@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+
+/*Import Raleway 400, 600 and 700 on line #1 (must be on first line)*/
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+img {
+  max-width: 100%;
+}
+
+/*nav {
+  font-size: 24px;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  border-bottom: 10px solid blue;
+  padding-bottom: 20px;
+  /*padding: 40px;*/
+  /*margin: 14px;
+  position: relative;*/
+
+/*}*/
+
+/*nav a{
+
+  padding-bottom: 20px;
+  /*padding: 40px;*/
+
+/*
+}*/
+
+/*---------NAVIGATION----------- */
+
+nav{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Poiret One', cursive;
+  background-color: white;
+  box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
+  transition: all 300s ease-out;
+    /* STEP 1: Add styles for fixed nav */
+  position: fixed;
+  z-index: 40;
+  top:0;
+opacity: 0.7;
+
+}
+
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 1rem;
+  padding: .25rem 0;
+  color: black;
+
+}
+
+
+nav .active {
+  border-bottom: 2px solid #F95758;
+}
+
+h1{
+  font-size: 70px;
+  text-align: center;
+  margin: 200px;
+
+}
+
+h2{
+  font-size: 40px;
+  text-align: center;
+  margin: 100px;
+
+
+}
+
+.Menu {
+  font-size: 30px;
+  text-align: center;
+  /*margin: 100px;*/
+  color: blue;
+  list-style-type: none;
+  border: 2px solid #C879B2;
+  /*display: block;*/
+  /*padding: 10px;
+  margin: 20px 2px;*/
+
+}
+
+/*.menu {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+  color: black;
+  border: 2px solid #C879B2;*/
+
+}
+ul {
+
+  text-align: center;
+  display: block;
+  /*margin: 0 500px;*/
+  list-style-type: none;
+
+
+}
+
+/* Grid Container!! */
+.grid {
+  /*height: 900px;*/
+  display: none;
+  /*grid-template-columns: repeat(4, 1fr);
+  /*grid-template-rows: repeat(1, 1fr);*/*/
+  /*grid-gap: 10px;*/
+ /* 1 */
+    /*grid-template-columns: 1fr 1fr 1fr 1fr; /* 2 */
+    /*grid-template-rows: 100vh;
+    grid-gap: 5px;*/
+}
+
+.container {
+  display: grid;
+  border: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 2 */
+  grid-template-rows: 100vh; /* 3 */
+  grid-gap: 5px;
+
+}
+.line ul {
+color: black;
+font-size: 10px;
+
+}
+
+div {
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  color: black;
+  line-height: 250px;
+  border: 2px solid blue;
+  grid-gap: 15px;
+}
+
+div:nth-of-type(1) {
+  background-color: white;
+  /*grid-column: 1 / 4;*/
+  /*grid-row: 1;*/
+  /*padding-bottom: 30px;*/
+  grid-gap: 15px;
+}
+
+div:nth-of-type(2) {
+  background-color: white;
+  /*grid-row: 2;
+  /*grid-column: 2 / 4;*/*/
+  grid-gap: 15px;
+
+}
+
+div:nth-of-type(3) {
+  background-color: white;
+
+  grid-gap: 15px;
+}
+
+div:nth-of-type(4) {
+  background-color: white;
+  /*grid-column: 4 / 4;*/
+  /*grid-row: 2;*/
+  grid-gap: 15px;
+  }
+
+ div:nth-of-type(5) {
+    background-color: white;
+    /*grid-column: 1 / 4;*/
+    /*grid-row: 3;*/
+  grid-gap: 15px;
+}
+
+
+
+Main h1{
+/*text-align: left;*/
+/*font-family: sans-serif;
+color: white;*/
+background-image: url(../images/loaded-bbq-burger.jpg);
+background-size: cover;
+padding-bottom: 160px;
+padding-top: 320px;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: auto;
+margin-left: 17px;
+margin-right: 17px;
+color: white;
+text-align: left;
+
+}
+
+main h1 p1 {
+  font-size: 58px;
+  font-family: sans-serif;
+
+}
+
+main h1 p2 {
+  font-family: 'Poiret One', cursive;
+  font-size: 24px;
+  position: relative;
+  bottom: 130px;
+}
+
+section {
+  position: relative;
+  /*top: 20px;
+  bottom: 20px;*/
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+section p {
+  color: black;
+}
+
+.button {
+  font-family: 'Poiret One', cursive;
+  border-radius: 3px;
+  /*background-color: white;*/
+  text-transform: uppercase;
+  /*letter-spacing: 1px;*/
+  /*font-size: 30px;*/
+  padding: 10px 25px;
+  color: green;
+  cursor: pointer;
+  /*font-weight: bold;*/
+  transition: all .10s ease;
+  outline: none;
+  position: relative;
+    left: 531px;
+    margin-top: -185px;
+    margin-bottom: 29px;
+    margin-left: -514px;
+    margin-right: 548px;
+    text-align: center;
+    border: 2px style #0099ff;
+    border-color: dotted dashed;
+}
+
+button {
+border: 2px solid #0099ff;
+border-bottom: 3px solid #0a7eaf;
+border-radius: 3px;
+/*background-color: #29ABE2;*/
+text-transform: uppercase;
+letter-spacing: 1px;
+font-family: 'Poiret One', cursive;
+font-size: 18px;
+color: green;
+cursor: pointer;
+background-color:  #0099ff;
+
+
+
+}
+button:nth-of-type(1){
+  border: 0;
+  border-bottom: 3px solid #0a7eaf;
+  border-radius: 3px;
+  border: 3px solid blue;
+  /*background-color: #29ABE2;*/
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Poiret One', cursive;
+  font-size: 42px;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+
+
+}
+
+button:hover{
+  transition: all 0.3s ease-in-out;
+  color: purple;
+  background-color: white;
+  border-color: blue;
+
+}
+
+
+.showMenu {
+  display: grid;
+
+
+}
+
+/*section1 button2 {
+  border: 0;
+  border-bottom: 3px solid #0a7eaf;
+  border-radius: 3px;
+  background-color: #29ABE2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  padding: 12px 55px;
+  color: white;
+  cursor: pointer;
+  transition: all .10s ease;
+  position: absolute;
+  left: 678px;*/
+
+
+aside{
+  display: inline-block;
+  font-family: 'Poiret One', cursive;
+  font-size: 24px;
+  float: right;
+  margin-left: 140px;
+margin-bottom: 0px;
+margin-top: 30px;
+font-weight: bolder;
+line-height: 150%;
+}
+
+footer {
+display: inline-block;
+}
+
+footer header {
+
+  display: inline-block;
+  background-color: blue;
+  border: black;
+  font-size: 24px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.5;
+}
+
+
+/*main h1 p1{
+  text-align: left;
+  text-indent: 40px;
+
+}*/
+
+
+.map {
+  display: grid;
+  border: black;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 150px;
+
+
+}
+
+
+
+.map img {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+
+
+
+.carousel {
+  /*margin-bottom: -400px;*/
+}
+
+
+
+@media screen and (max-width: 800px) {
+  section {
+    grid-template-columns: (1fr 1fr 1fr 1fr);
+  }
+}
